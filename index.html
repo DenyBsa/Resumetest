@@ -7,89 +7,112 @@
     <meta name="keywords" content="me, me, me" />
     <meta name="description" content="My page" />
     <title>My page</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <img src="/lion.jpg.webp" alt="Photo of the Lion" width="350" />
-    <h1>Denys Bambara</h1>
-    <p>
-      I'm something years old.<strong
-        ><em> I like travelling, hiking and reading</em></strong
-      >
-    </p>
-    <p>I'd like to finish this course as soon as possible.</p>
+    <div class="container">
+      <div class="info-photo">
+        <img class="image" src="/lion.jpg.webp" alt="Photo of the Lion" />
 
-    <hr color="purple" />
-    <h2>Links</h2>
-    <a href="http://instagram.com/d.bambara" target="_blank">Instagram</a> |
-    <a href="http://Vkontakte.com/d.bambara" target="_blank">Vkontakte</a>
-    <hr color="purple" />
+        <div class="info-text">
+          <h1 id="name">Denys Bambara</h1>
+          <p>
+            I'm something years old.<strong
+              ><em> I like travelling, hiking and reading</em></strong
+            >
+          </p>
+          <p>I'd like to finish this course as soon as possible.</p>
 
-    <h2>My hobbies</h2>
-    <ul type="square">
-      <li>
-        Travelling
-        <ul>
-          <li>I've been to Denmark, Turkey, Germany.</li>
-        </ul>
-      </li>
-      <li>
-        Reading
-        <ul>
-          <li>Especially detective and adventure genres</li>
-        </ul>
-      </li>
-      <li>Hiking</li>
-    </ul>
-    <hr color="purple" />
-    <table>
-      <thead>
-        <tr>
-          <th>Company</th>
-          <th>Position</th>
-          <th>Duration</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>MCDonald's</td>
-          <td>Manager</td>
-          <td>1 year</td>
-        </tr>
-        <tr>
-          <td>MCDonald's</td>
-          <td>Manager</td>
-          <td>1 year</td>
-        </tr>
-        <tr>
-          <td>MCDonald's</td>
-          <td>Manager</td>
-          <td>1 year</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <hr color="purple" />
-
-    <h2>Contact me</h2>
-
-    <form action="/">
-      <div>
-        <label for="text">Your name</label>
-        <input type="text" id="text" placeholder="Write your name..." />
+          <h2>Links</h2>
+          <a href="http://instagram.com/d.bambara" target="_blank">Instagram</a>
+          |
+          <a href="http://Vkontakte.com/d.bambara" target="_blank">Vkontakte</a>
+        </div>
       </div>
-      <div>
-        <label for="email">Your email</label>
-        <input type="text" id="email" placeholder="Write your email..." />
+
+      <!-- <hr color="purple" /> -->
+
+      <div class="box">
+        <div class="card-1">
+          <h2>My hobbies</h2>
+          <ul type="square">
+            <li>
+              Travelling
+              <ul>
+                <li>I've been to Denmark, Turkey, Germany.</li>
+              </ul>
+            </li>
+            <li>
+              Reading
+              <ul>
+                <li>Especially detective and adventure genres</li>
+              </ul>
+            </li>
+            <li>Hiking</li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <label for="message">Your message</label>
-        
+
+      <br />
+
+      <div class="box2">
+        <div class="card-2">
+          <h2>My experience</h2>
+          <table class="table">
+            <thead class="thead">
+              <tr>
+                <th>Company</th>
+                <th>Position</th>
+                <th>Duration</th>
+              </tr>
+            </thead>
+            <tbody class="tbody">
+              <tr>
+                <td>MCDonald's</td>
+                <td>Manager</td>
+                <td>1 year</td>
+              </tr>
+              <tr>
+                <td>MCDonald's</td>
+                <td>Manager</td>
+                <td>1 year</td>
+              </tr>
+              <tr>
+                <td>MCDonald's</td>
+                <td>Manager</td>
+                <td>1 year</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
-      <div>
-        <label for="story"></label>
-        <textarea name="story" id="story" cols="30" rows="5" placeholder="Write your message.."></textarea>
-      </div>
-      <button>Send!</button>
-    </form>
+
+      <form class="form" action="/">
+        <h2>Contact me</h2>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="text">Your name</label>
+            <input type="text" id="text" placeholder="Write your name..." />
+          </div>
+          <div class="form-group">
+            <label for="email">Your email</label>
+            <input type="text" id="email" placeholder="Write your email..." />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Your message</label>
+          <textarea
+            name="story"
+            id="story"
+            cols="30"
+            rows="5"
+            placeholder="Write your message.."
+          ></textarea>
+        </div>
+        <button class="btn">Send!</button>
+      </form>
+    </div>
   </body>
 </html>
